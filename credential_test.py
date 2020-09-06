@@ -14,3 +14,9 @@ class TestUser(unittest.TestCase):
         set up method to run before the test case
         '''
         self.new_user = User("Alexotieno", "alexotieno900@gmail", "alex123")
+
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
+        
