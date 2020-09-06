@@ -33,3 +33,29 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.user_name,"Alexotieno")
         self.assertEqual(self.new_user.email,"alexotieno900@gmail.com")
         self.assertEqual(self.new_user.password,"alex123")
+
+    def test_save_user(self):
+        '''
+        test case to test if the user object is saved in users array
+        '''
+        self.new_user.save_user() # Saving new user
+        self.assertEqual(len(User.user_list), 1)
+
+    def test_save_multiple_user(self):
+        '''
+        this test-case method gives users the ability to save multiple account details
+        '''
+        self.new_user.save_user()
+        test_user = User("Mercyline", "aokomercyline@gmail.com", "mercy123")
+        test_user.save_user()
+        self.assertEqual(len(User.user_list), 2)
+
+    def test_display_all_user(self):
+        '''
+        Method that return a list of all users saved
+        '''
+        self.assertEqual(User.display_users(), User.user_list)
+
+if __name__ == '__main__':
+    unittest.main()
+
