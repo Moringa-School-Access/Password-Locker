@@ -79,3 +79,15 @@ class TestCredential(unittest.TestCase):
         test_credential.save_credential()
 
         credentials_exists = Credential.credential_exit("alexotieno900@gmail.com")
+
+        self.assertTrue(credentials_exists)
+
+    def test_display_all_credentials(self):
+        '''
+        method that returns a list of all credentials saved
+        '''
+
+        self.assertEqual(Credential.display_credential(),Credential.credential_list)
+
+if __name__ == '__main__':
+    unittest.main()
