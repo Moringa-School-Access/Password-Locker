@@ -25,6 +25,10 @@ This project is a python application that manages login and signup credentials o
 * cd Password-Locker
 * code . or atom . (Open on the base text Editor you have in your machine)
 
+### Running the Application
+* Open the clone file in your terminal and run the following command:
+    * $ chmod +x run.py
+    * $ ./run.py
 ## Technologies Used
 #
 * Python3.8
