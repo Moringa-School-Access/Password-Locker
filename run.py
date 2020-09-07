@@ -76,7 +76,7 @@ def main():
             print("-" * 10)
             print("What account would like to create credentials for?")
             site = input()
-            print("................")
+            print("----------------")
                             
             print("First name ....")
             fname = input()
@@ -117,7 +117,7 @@ def main():
             print("-" * 10)
             print("Which account would you like to create?")
             site = input()
-            print("->->->")
+            print("----------------")
 
             print("First name ....")
             fname = input()
