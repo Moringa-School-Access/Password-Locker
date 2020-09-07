@@ -30,8 +30,9 @@ This project is a python application that manages login and signup credentials o
 ## Known Bugs
 #
 
-* 
+* The user Story did not can appear as expected
 
-## Contribution
+## Contact Information
+If you have any question or contributions, please email me at alexotieno900@gmail.com
 
 
