@@ -67,8 +67,8 @@ def main():
     print('\n')
 
     while True:
-        print("Use thes short codes : cc - create a new_user account with a user_defined password, dc - display credential and user, can -create a new_user account with" 
-              "auto-generated password, ex -exit ") 
+        print("Use thes short codes : \n cc - create account with a user_defined password \n dc - display credential \n cg -create account with" 
+              "auto-generated password \n ex -exit ") 
         short_code = input().lower()
 
         if short_code == "cc":
@@ -76,7 +76,7 @@ def main():
             print("-" * 10)
             print("What account would like to create credentials for?")
             site = input()
-            print("->->->")
+            print("................")
                             
             print("First name ....")
             fname = input()
@@ -112,7 +112,7 @@ def main():
                 print("It looks like no account credentials exist at the moment. Consider creating one or more ")
                 print("\n")
 
-        elif short_code == "can":
+        elif short_code == "cg":
             print("New user")
             print("-" * 10)
             print("Which account would you like to create?")
